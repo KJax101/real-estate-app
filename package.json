@@ -1,0 +1,19 @@
+{
+  "name": "real-estate-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KJax101/real-estate-app.git"
+  },
+  "author": "kjgbhx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KJax101/real-estate-app/issues"
+  },
+  "homepage": "https://github.com/KJax101/real-estate-app#readme"
+}
