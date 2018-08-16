@@ -17,7 +17,7 @@ body {
   display: grid;
   align-items: center;
   padding-right: 30px;
-  display: none;
+  /* display: none; */
 }
 
 .navbar {
@@ -42,6 +42,12 @@ body {
   background-color: white;
   padding: 11px 7px;
   font-family: "Open Sans", sans-serif;
+  color: brown;
+}
+
+.expanded-menu a:link,
+.expanded-menu a:visited {
+  text-decoration: none;
   color: brown;
 }
 .main-logo,
