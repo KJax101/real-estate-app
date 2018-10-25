@@ -10,12 +10,16 @@ const scrapeDataFromFSBO = (city, state) => {
   state = state.split(" ").join("-");
   const scrapeUrl = `${urlBase}${city}-${state}`;
   console.log(scrapeUrl);
+
+  // request is a function which comes from the request module
   request(scrapeUrl, function(err, response, html) {
     fs.writeFileSync("./filename.html", html);
+    const $ = cheerio.load(html);
   });
 };
 
 // www.forsalebyowner.com/search/list/beverly-hills-california
 // https://www.craigslist.org/tampa-fl/
 // TESTING BY USING FUNCTION
+// //blueprint.forsalebyowner.com/uploads/resize/for_sale_by_owner/2418/24182323-866e56c6e7af9c1d6751700e30f88314.jpg
 scrapeDataFromFSBO("tampa", "florida");
