@@ -12,8 +12,7 @@
     <!-- SEO -->
     <title>For Sale by Owner Homes in Tampa, FL - ForSaleByOwner.com</title>
     <meta name="description" content="for sale by owner  in Tampa, FL" />
-    <link rel="canonical" href="https://www.forsalebyowner.com/search/list/tampa-florida" />
-
+    <link rel="canonical" href="https://www.forsalebyowner.com/search/list/tampa-florida" /
     <!-- STYLESHEETS -->
     <link rel="stylesheet" media="screen, projection" href="/static/redesign/css/vendor-bundle.css" />
     <link rel="stylesheet" media="screen, projection" href="/static/redesign/css/master-red.css" />
@@ -349,16 +348,454 @@
         </div>
         <!-- End external header -->
 
-        <div id="blueprint" class="no-js no-flash" ng-non-bindable data-blueprint data-host="https://www.forsalebyowner.com" data-route-id="search_list"
-            data-route-path="/search/list/{slug}/{filters}" data-authentication-url="//www.forsalebyowner.com/sell-my-house/service/registration/modal/?remote=true"
-            data-sibling-listings-url="https://www.forsalebyowner.com/gateway/services/listing/getSiblings/?v=1&amp;responseFormat=PLAINTEXT&amp;listingIDs={id}"
-            data-cdn-image-listing-url="//blueprint.forsalebyowner.com/uploads/" data-ga-analytics-id="UA-325867-2" data-optimize_container_ids="{&quot;GTM-P688H32&quot;:true}"
-            data-user-id="" data-is-internal-app="1">
+    <div id="blueprint"
+        class="no-js no-flash"
+        ng-non-bindable
+        data-blueprint
+        data-host="https://www.forsalebyowner.com"
+        data-route-id="search_list"
+        data-route-path="/search/list/{slug}/{filters}"
+                                    data-authentication-url="//www.forsalebyowner.com/sell-my-house/service/registration/modal/?remote=true"
+                            data-sibling-listings-url="https://www.forsalebyowner.com/gateway/services/listing/getSiblings/?v=1&amp;responseFormat=PLAINTEXT&amp;listingIDs={id}"
+                            data-cdn-image-listing-url="//blueprint.forsalebyowner.com/uploads/"
+                            data-ga-analytics-id="UA-325867-2"
+                            data-optimize_container_ids="{&quot;GTM-P688H32&quot;:true}"
+                            data-user-id=""
+                            data-is-internal-app="1"
+                    >
+
+        <!-- CONTENT -->
+        <div class="blueprint-content js-blueprint-content">
+            
+    <form role="search" action=""
+    data-controller="SearchFormController"
+    data-route="/search/list/{slug}/{filters}">
+
+    <div class="filterForm"
+        data-controller="ToggleController"
+        data-id="filters">
+
+        <div class="ctrlBox">
+    <div class="ctrlBox-hd mix-ctrlBox-hd_inset mix-ctrlBox_LG-hd_padLeft">
+        <span class="searchField">
+            <input id="slug" class="input input_search mix-input_lightPlaceholder js-search-slug" type="text" name="slug"
+                value="berkeley-california"
+                placeholder="Search for neighborhood, city or zip"
+                data-controller="SearchFieldController" />
+        </span>
+    </div>
+</div>
+
+        <div class="filter filter_md"
+    data-controller="FilterController"
+    data-model="ScopeModel">
+
+    <div class="ctrlBox"
+        data-controller="ToggleController">
+
+        <a class="ctrlBox-hd ctrlBox-hd_arrow mix-ctrlBox-hd_md js-toggle" href="#">
+            <div class="txt txt_crop">Price Range</div>
+            <div class="txt txt_sm txt_accent txt_crop js-filter-summary"></div>
+        </a> <!-- /ctrlBox-hd -->
+
+        <div class="ctrlBox-bd ctrlBox-bd_isModalSM mix-ctrlBox-bd_sm">
+                            <ul class="navList">
+    <li class="navList-item isVisuallyHiddenMD" style="height: 40px;">
+        <div style="float: left;"><span>Select Price Range</span></div>
+        <div style="float: right;"><a class="js-toggle-close" href=""><img src="/static/redesign/images/lightbox-icon-close-compact.png"/></a></div>
+    </li>
+    <li class="navList-item">
+        <ol class="range">
+            <li class="range-input">
+                <input class="input" type="text" name="price[0]" placeholder="Min"
+                    value=""
+                    data-controller="PriceFieldController" />
+            </li>
+            <li class="range-input">
+                <input class="input" type="text" name="price[1]" placeholder="Max"
+                    value=""
+                    data-controller="PriceFieldController" />
+            </li>
+        </ol>
+    </li>
+    <!--<li class="navList-item isVisuallyHiddenMD">
+        <a class="btn btn_primary mix-btn_full js-toggle-close" href="">Close</a>
+    </li>-->
+</ul>
+                    </div> <!-- /ctrlBox-bd -->
+
+    </div> <!-- /ctrlBox -->
+
+</div> <!-- /filter -->
+
+        <div class="filter filter_md"
+    data-controller="FilterController"
+    data-model="ScopeModel">
+
+    <div class="ctrlBox"
+        data-controller="ToggleController">
+
+        <a class="ctrlBox-hd ctrlBox-hd_arrow mix-ctrlBox-hd_md js-toggle" href="#">
+            <div class="txt txt_crop">Property Type</div>
+            <div class="txt txt_sm txt_accent txt_crop js-filter-summary"></div>
+        </a> <!-- /ctrlBox-hd -->
+
+        <div class="ctrlBox-bd ctrlBox-bd_isModalSM mix-ctrlBox-bd_sm">
+                            <ol class="navList">
+    <li class="navList-item isVisuallyHiddenMD">Select Property Type</li>
+    <li class="navList-item mix-navList-item_hover">
+        <label class="label mix-label_hasCheckboxRt">
+            <input class="checkbox" type="checkbox" name="types[]" value="house"
+                 checked                data-summary="Single Family" />
+            Single Family
+        </label>
+    </li>
+    <li class="navList-item mix-navList-item_hover">
+        <label class="label mix-label_hasCheckboxRt">
+            <input class="checkbox" type="checkbox" name="types[]" value="condo"
+                 checked                data-summary="Condos" />
+            Condos
+        </label>
+    </li>
+    <li class="navList-item mix-navList-item_hover">
+        <label class="label mix-label_hasCheckboxRt">
+            <input class="checkbox" type="checkbox" name="types[]" value="townhouse"
+                 checked                data-summary="Townhomes" />
+            Townhomes
+        </label>
+    </li>
+    <li class="navList-item mix-navList-item_hover">
+        <label class="label mix-label_hasCheckboxRt">
+            <input class="checkbox" type="checkbox" name="types[]" value="multi"
+                     checked                   data-summary="Multi-family" />
+            Multi-family
+        </label>
+    </li>
+    <li class="navList-item mix-navList-item_hover">
+        <label class="label mix-label_hasCheckboxRt">
+            <input class="checkbox" type="checkbox" name="types[]" value="farm"
+                 checked                data-summary="Farm/Land" />
+            Farm/Land
+        </label>
+    </li>
+    <li class="navList-item mix-navList-item_hover">
+        <label class="label mix-label_hasCheckboxRt">
+            <input class="checkbox" type="checkbox" name="types[]" value="other"
+                 checked                data-summary="Other" />
+            Other
+        </label>
+    </li>
+    <li class="navList-item isVisuallyHiddenMD">
+        <a class="btn btn_primary mix-btn_full js-toggle-close" href="#">Close</a>
+    </li>
+</ol>
+                    </div> <!-- /ctrlBox-bd -->
+
+    </div> <!-- /ctrlBox -->
+
+</div> <!-- /filter -->
+
+        <div class="filter filter_md"
+    data-controller="FilterController"
+    data-model="ScopeModel">
+
+    <div class="ctrlBox"
+        data-controller="ToggleController">
+
+        <a class="ctrlBox-hd ctrlBox-hd_arrow mix-ctrlBox-hd_md js-toggle" href="#">
+            <div class="txt txt_crop">Listing Type</div>
+            <div class="txt txt_sm txt_accent txt_crop js-filter-summary"></div>
+        </a> <!-- /ctrlBox-hd -->
+
+        <div class="ctrlBox-bd ctrlBox-bd_isModalSM mix-ctrlBox-bd_sm">
+                            <ol class="navList">
+    <li class="navList-item isVisuallyHiddenMD">Select Listing Type</li>
+    <li class="navList-item mix-navList-item_hover">
+        <label class="label mix-label_hasCheckboxRt">
+            <input class="checkbox" type="checkbox" name="source[]" value="fsbo"
+                 checked                data-summary="FSBO" />
+            For Sale By Owner (FSBO)
+        </label>
+    </li>
+    <li class="navList-item mix-navList-item_hover">
+        <label class="label mix-label_hasCheckboxRt">
+            <input class="checkbox" type="checkbox" name="source[]" value="mls"
+                 checked                data-summary="MLS" />
+            Multiple Listing Service (MLS)
+        </label>
+    </li>
+    <li class="navList-item isVisuallyHiddenMD">
+        <a class="btn btn_primary mix-btn_full js-toggle-close" href="">Close</a>
+    </li>
+</ol>
+                    </div> <!-- /ctrlBox-bd -->
+
+    </div> <!-- /ctrlBox -->
+
+</div> <!-- /filter -->
+
+        <div class="filter filter_md"
+    data-controller="FilterController"
+    data-model="ScopeModel">
+
+    <div class="ctrlBox"
+        data-controller="ToggleController">
+
+        <a class="ctrlBox-hd ctrlBox-hd_arrow mix-ctrlBox-hd_md js-toggle" href="#">
+            <div class="txt txt_crop">Bed &amp; Bath</div>
+            <div class="txt txt_sm txt_accent txt_crop js-filter-summary"></div>
+        </a> <!-- /ctrlBox-hd -->
+
+        <div class="ctrlBox-bd ctrlBox-bd_isModalSM mix-ctrlBox-bd_sm">
+                            <ul class="navList">
+    <li class="navList-item isVisuallyHiddenMD">Select Bedrooms &amp; Bathrooms</li>
+    <li class="navList-item">
+        <ul class="vList vList_lrg">
+            <li><div class="box">
+    <div class="box-hd">
+        <span class="txt txt_sm txt_bold">Bedrooms</span>
+    </div>
+    <div class="box-bd">
+        <ol class="inputBlock">
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="bedAny" type="radio" name="beds" value=""
+                     checked                    data-summary="" />
+                <label class="inputBlock-item-label" for="bedAny">Any</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="bed1" type="radio" name="beds" value="1"i
+                                        data-summary="1+ Bed" />
+                <label class="inputBlock-item-label" for="bed1">1+</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="bed2" type="radio" name="beds" value="2"
+                                        data-summary="2+ Beds" />
+                <label class="inputBlock-item-label" for="bed2">2+</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="bed3" type="radio" name="beds" value="3"
+                                        data-summary="3+ Beds" />
+                <label class="inputBlock-item-label" for="bed3">3+</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="bed4" type="radio" name="beds" value="4"
+                                        data-summary="4+ Beds" />
+                <label class="inputBlock-item-label" for="bed4">4+</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="bed5" type="radio" name="beds" value="5"
+                                        data-summary="5+ Beds" />
+                <label class="inputBlock-item-label" for="bed5">5+</label>
+            </li>
+        </ol>
+    </div>
+</div> <!-- /box -->
+</li>
+            <li><div class="box">
+    <div class="box-hd">
+        <span class="txt txt_sm txt_bold">Bathrooms</span>
+    </div>
+    <div class="box-bd">
+        <ol class="inputBlock">
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="bathsAny" type="radio" name="baths" value=""
+                     checked                    data-summary="" />
+                <label class="inputBlock-item-label" for="bathsAny">Any</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="baths1" type="radio" name="baths" value="1"
+                                        data-summary="1+ Bath" />
+                <label class="inputBlock-item-label" for="baths1">1+</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="baths2" type="radio" name="baths" value="2"
+                                        data-summary="2+ Baths" />
+                <label class="inputBlock-item-label" for="baths2">2+</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="baths3" type="radio" name="baths" value="3"
+                                        data-summary="3+ Baths" />
+                <label class="inputBlock-item-label" for="baths3">3+</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="baths4" type="radio" name="baths" value="4"
+                                        data-summary="4+ Baths" />
+                <label class="inputBlock-item-label" for="baths4">4+</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="baths5" type="radio" name="baths" value="5"
+                                        data-summary="5+ Baths" />
+                <label class="inputBlock-item-label" for="baths5">5+</label>
+            </li>
+        </ol>
+    </div>
+</div> <!-- /box -->
+</li>
+        </ul>
+    </li>
+    <li class="navList-item isVisuallyHiddenMD">
+        <a class="btn btn_primary mix-btn_full js-toggle-close" href="">Close</a>
+    </li>
+</ul>
+                    </div> <!-- /ctrlBox-bd -->
+
+    </div> <!-- /ctrlBox -->
+
+</div> <!-- /filter -->
+
+        <div class="filter filter_sm"
+            data-controller="FilterController"
+            data-model="ScopeModel">
+            <div class="ctrlBox"
+    data-controller="ToggleController">
+
+    <a class="ctrlBox-hd ctrlBox-hd_arrow mix-ctrlBox-hd_inset mix-ctrlBox-hd_sm mix-ctrlBox_LG-hd_padRight isHiddenSM js-toggle" href="#">
+        <div class="txt txt_sm txt_accent">More Filters</div>
+    </a> <!-- /ctrlBox-hd -->
+
+    <div class="ctrlBox-bd ctrlBox-bd_isActiveSM mix-ctrlBox-bd_lg">
+        <ul class="navList">
+            <li class="navList-item isVisuallyHiddenMD"></li>
+            <li class="navList-item">
+                <div class="blocks blocks_MD4up mix-blocks_tight mix-blocks_SM_vert">
+                    <div class="vList vList_lrg">
+                        <div><div class="box">
+    <div class="box-hd">
+        <span class="txt txt_sm txt_bold">Listing Status</span>
+    </div>
+    <div class="box-bd">
+        <ol class="navList">
+            <li class="navList-item mix-navList-item_hover">
+                <label class="label mix-label_hasCheckboxRt">
+                    <input class="checkbox" type="checkbox" name="status[]" value="new"
+                         checked                        data-summary="New Listings" />
+                    New Listings (past week)
+                </label>
+            </li>
+            <li class="navList-item mix-navList-item_hover">
+                <label class="label mix-label_hasCheckboxRt">
+                    <input class="checkbox" type="checkbox" name="status[]" value="reduced"
+                         checked                        data-summary="Reduced Prices" />
+                    Reduced Prices (past week)
+                </label>
+            </li>
+            <li class="navList-item mix-navList-item_hover">
+                <label class="label mix-label_hasCheckboxRt">
+                    <input class="checkbox" type="checkbox" name="status[]" value="open"
+                         checked                        data-summary="Open Houses"/>
+                    Open Houses
+                </label>
+            </li>
+        </ol>
+    </div>
+</div> <!-- /box -->
+</div>
+                    </div>
+                    <div class="vList vList_lrg">
+                        <div><div class="box">
+    <div class="box-hd">
+        <span class="txt txt_sm txt_bold">Square Feet</span>
+    </div>
+    <div class="box-bd">
+        <ol class="range">
+            <li class="range-input"><input class="input" type="text" name="size[0]" value="" placeholder="Min"/></li>
+            <li class="range-input"><input class="input" type="text" name="size[1]" value="" placeholder="Max"/></li>
+        </ol>
+    </div>
+</div> <!-- /box -->
+</div>
+                        <div><div class="box">
+    <div class="box-hd">
+        <span class="txt txt_sm txt_bold">Lot Size</span>
+    </div>
+    <div class="box-bd">
+        <ol class="range">
+            <li class="range-input"><input class="input" type="text" name="lot[0]" value="" placeholder="Min"/></li>
+            <li class="range-input"><input class="input" type="text" name="lot[1]" value="" placeholder="Max"/></li>
+        </ol>
+    </div>
+</div> <!-- /box -->
+</div>
+                    </div>
+                    <div class="vList vList_lrg">
+                        <div><div class="box">
+    <div class="box-hd">
+        <span class="txt txt_sm txt_bold">Year Built</span>
+    </div>
+    <div class="box-bd">
+        <ol class="range">
+            <li class="range-input"><input class="input" type="text" name="year[0]" value="" placeholder="Min"/></li>
+            <li class="range-input"><input class="input" type="text" name="year[1]" value="" placeholder="Max"/></li>
+        </ol>
+    </div>
+</div> <!-- /box -->
+</div>
+                        <div><div class="box">
+    <div class="box-hd">
+        <span class="txt txt_sm txt_bold">Parking Spots</span>
+    </div>
+    <div class="box-bd">
+                <ol class="inputBlock">
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="parkingAny" type="radio" name="parking" value="" checked />
+                <label class="inputBlock-item-label" for="parkingAny">Any</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="parking1" type="radio" name="parking" value="1" />
+                <label class="inputBlock-item-label" for="parking1">1+</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="parking2" type="radio" name="parking" value="2" />
+                <label class="inputBlock-item-label" for="parking2">2+</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="parking3" type="radio" name="parking" value="3" />
+                <label class="inputBlock-item-label" for="parking3">3+</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="parking4" type="radio" name="parking" value="4" />
+                <label class="inputBlock-item-label" for="parking4">4+</label>
+            </li>
+            <li class="inputBlock-item">
+                <input class="inputBlock-item-input" id="parking5" type="radio" name="parking" value="5" />
+                <label class="inputBlock-item-label" for="parking5">5+</label>
+            </li>
+        </ol>
+    </div>
+</div> <!-- /box -->
+</div>
+                    </div>
+                    <div class="vList vList_lrg">
+                        <div><div class="box">
+    <div class="box-hd">
+        <span class="txt txt_sm txt_bold">Keywords</span>
+    </div>
+    <div class="box-bd">
+        <input class="input" type="text" name="keywords" placeholder="pool, fireplace, patio, etc." />
+    </div>
+</div> <!-- /box -->
+</div>
+                        <div><div class="box">
+    <div class="box-hd">
+        <span class="txt txt_sm txt_bold">MLS</span>
+    </div>
+    <div class="box-bd">
+        <input class="input" type="text" name="mls" placeholder="MLS #" />
+    </div>
+</div> <!-- /box -->
+</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div> <!-- /ctrlBox-bd -->
 
             <!-- CONTENT -->
             <div class="blueprint-content js-blueprint-content">
 
-                <form role="search" action="" data-controller="SearchFormController" data-route="/search/list/{slug}/{filters}">
+        <div class="filter filter_md isHidden" data-controller="FilterController" data-model="ScopeModel">
+            <input type="hidden" name="list" data-page-reset="1" value="">
+        </div>
 
                     <div class="filterForm" data-controller="ToggleController" data-id="filters">
 
@@ -376,12 +813,11 @@
 
                             <div class="ctrlBox" data-controller="ToggleController">
 
-                                <a class="ctrlBox-hd ctrlBox-hd_arrow mix-ctrlBox-hd_md js-toggle" href="#">
-                                    <div class="txt txt_crop">Price Range</div>
-                                    <div class="txt txt_sm txt_accent txt_crop js-filter-summary"></div>
-                                </a>
-                                <!-- /ctrlBox-hd -->
 
+                    3 Results
+                            +1 Filters
+                    
+    </span>
                                 <div class="ctrlBox-bd ctrlBox-bd_isModalSM mix-ctrlBox-bd_sm">
                                     <ul class="navList">
                                         <li class="navList-item isVisuallyHiddenMD" style="height: 40px;">
@@ -408,64 +844,11 @@
         <a class="btn btn_primary mix-btn_full js-toggle-close" href="">Close</a>
     </li>-->
                                     </ul>
-                                </div>
-                                <!-- /ctrlBox-bd -->
+                                </div>          
 
-                            </div>
-                            <!-- /ctrlBox -->
-
-                        </div>
-                        <!-- /filter -->
-
-                        <div class="filter filter_md" data-controller="FilterController" data-model="ScopeModel">
-
-                            <div class="ctrlBox" data-controller="ToggleController">
-
-                                <a class="ctrlBox-hd ctrlBox-hd_arrow mix-ctrlBox-hd_md js-toggle" href="#">
-                                    <div class="txt txt_crop">Property Type</div>
-                                    <div class="txt txt_sm txt_accent txt_crop js-filter-summary"></div>
-                                </a>
-                                <!-- /ctrlBox-hd -->
-
-                                <div class="ctrlBox-bd ctrlBox-bd_isModalSM mix-ctrlBox-bd_sm">
-                                    <ol class="navList">
-                                        <li class="navList-item isVisuallyHiddenMD">Select Property Type</li>
-                                        <li class="navList-item mix-navList-item_hover">
-                                            <label class="label mix-label_hasCheckboxRt">
-                                                <input class="checkbox" type="checkbox" name="types[]" value="house" checked data-summary="Single Family" /> Single Family
-                                            </label>
-                                        </li>
-                                        <li class="navList-item mix-navList-item_hover">
-                                            <label class="label mix-label_hasCheckboxRt">
-                                                <input class="checkbox" type="checkbox" name="types[]" value="condo" checked data-summary="Condos" /> Condos
-                                            </label>
-                                        </li>
-                                        <li class="navList-item mix-navList-item_hover">
-                                            <label class="label mix-label_hasCheckboxRt">
-                                                <input class="checkbox" type="checkbox" name="types[]" value="townhouse" checked data-summary="Townhomes" /> Townhomes
-                                            </label>
-                                        </li>
-                                        <li class="navList-item mix-navList-item_hover">
-                                            <label class="label mix-label_hasCheckboxRt">
-                                                <input class="checkbox" type="checkbox" name="types[]" value="multi" checked data-summary="Multi-family" /> Multi-family
-                                            </label>
-                                        </li>
-                                        <li class="navList-item mix-navList-item_hover">
-                                            <label class="label mix-label_hasCheckboxRt">
-                                                <input class="checkbox" type="checkbox" name="types[]" value="farm" checked data-summary="Farm/Land" /> Farm/Land
-                                            </label>
-                                        </li>
-                                        <li class="navList-item mix-navList-item_hover">
-                                            <label class="label mix-label_hasCheckboxRt">
-                                                <input class="checkbox" type="checkbox" name="types[]" value="other" checked data-summary="Other" /> Other
-                                            </label>
-                                        </li>
-                                        <li class="navList-item isVisuallyHiddenMD">
-                                            <a class="btn btn_primary mix-btn_full js-toggle-close" href="#">Close</a>
-                                        </li>
-                                    </ol>
-                                </div>
-                                <!-- /ctrlBox-bd -->
+            <a class="link" href="/sell-my-house/register/login/?returnURL=/search/list/berkeley-california">
+            <span class="txt txt_sm">Save This Search</span>
+        </a>
 
                             </div>
                             <!-- /ctrlBox -->
@@ -834,13 +1217,14 @@
                                     <span class="txt txt_sm">
                                         <div class="dropDown" data-controller="ToggleController">
 
-                                            <a class="link" href="/sell-my-house/register/login/?returnURL=/search/list/tampa-florida">
-                                                <span class="txt txt_sm">Save This Search</span>
-                                            </a>
+                    3 Results
+                            +1 Filters
+                    
+    </span>
 
-
-                                            <div class="dropDown-bd mix-dropDown-bd_inset">
-                                                <form class="form" action="" data-controller="SearchSaveController">
+            <a class="link" href="/sell-my-house/register/login/?returnURL=/search/list/berkeley-california">
+            <span class="txt txt_sm">Save This Search</span>
+        </a>
 
                                                     <label>
                                                         <span class="label">
@@ -864,299 +1248,82 @@
 
                                                 </form>
                                             </div>
-                                            <!-- /dropDown-bd -->
 
-                                        </div>
-                                        <!-- /dropDown -->
-                                    </span>
-                                </div>
-                                <!-- /hList -->
-                            </div>
+        </form>
+    </div> <!-- /dropDown-bd -->
 
-                            <div class="grid_MD-col_1of3 grid_SM-col_auto mix-grid-col_rt">
-                                <ul class="btnCtrl">
-                                    <li class="isHiddenMD">
-                                        <a href="javascript://toggle?id=filters" class="btnCtrl-item-btn btnCtrl-item-btn_light" data-stop-propagation>
-                                            <i class="icon icon_filter mix-icon_accent mix-icon_SM_lrg mix-icon_MD_md" aria-hidden="true"></i>
-                                            Filters
-                                        </a>
-                                    </li>
-                                    <li class="filter" data-controller="FilterController" data-model="ScopeModel">
+</div> <!-- /dropDown -->
+    </span>
+</div> <!-- /hList -->
+    </div>
 
-                                        <div class="dropDown dropDown_switch" data-controller="ToggleController">
+    <div class="page page_pushTopLg">
+        <div class="tier tier_wide">
+            <div class="listings"
+    data-controller="ListingListController"
+    data-model="ScopeModel">
 
-                                            <div class="dropDown-trigger">
-                                                <a class="btnCtrl-item-btn btnCtrl-item-btn_light js-toggle" href="#">
-                                                    <i class="icon icon_sort mix-icon_accent mix-icon_SM_lrg mix-icon_MD_md" aria-hidden="true"></i>
-                                                    Sort
-                                                </a>
+    <div class="grid_MD grid_MD_gutter">
+        <div class="grid_MD-col_auto">
+                            <h1 class="hdg hdg_h1c mix-hdg_block contentBox-hd">Homes For Sale in Berkeley, CA</h1>
+                        <div class="js-listings-list">
+                
+
+                                        <h2 class="blockHdg blockHdg_pushBottom">Listings near Berkeley, CA</h2>
+        <ol class="vList vList_lrgMD" data-controller="ListingListBucketController">
+        <li>
+        
+<div class="estate
+                        "
+    data-controller="ListingController"
+    data-source-key="24125862"
+    data-id="58ae2d74b0f839eb578b4567">
+
+    <div class="estate-bd">
+        <a href="https://www.forsalebyowner.com/listing/Rent-to-Own-House-Oakland-CA/58ae2d74b0f839eb578b4567">
+            <div class="estate-img">
+                                    <div class="imgBkgrd imgBkgrd_40x29 imgBkgrd_SM_32x15" style="background-image:url(//blueprint.forsalebyowner.com/uploads/resize/for_sale_by_owner/2412/24125862-ed9c70395a61cd5fcbec4b697c20e3a5.jpg);"></div>
+                
+                <div class="estate-img-count">
+                    <span class="flag flag_rt">
+                        <i class="icon icon_image"></i>
+                        5
+                    </span>
+                </div>
+            </div>
+        </a>
+
+        <div class="estate-info" itemscope itemtype="http://schema.org/SingleFamilyResidence">
+            <div class="estateSummary mix-estateSummary_SM_sm">
+                <a href="https://www.forsalebyowner.com/listing/Rent-to-Own-House-Oakland-CA/58ae2d74b0f839eb578b4567">
+                    <div class="estateSummary-price mix-estateSummary_SM-price_sm">$1,000</div>
+
+                    <div class="highlight"></div>
+                    
+                    <div class="estateSummary-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">Rent to Own House</span>,
+                        <span itemprop="addressLocality">Oakland</span>, <span itemprop="addressRegion">CA</span>
+                        <span itemprop="postalCode">94612</span>
+                    </div>
+
+                    <div class="estateSummary_SM-list estateSummary_LG-list">
+                                                    <div class="estateSummary-list">
+                                                                    <div>3 Beds</div>
+                                
+                                                                    <div>2 Baths</div>
+                                                            </div>
+                        
+                                                    <div class="estateSummary-list">
+                                                                    <div>1,653 Sqft</div>
+                                
+                                                                    <div>Single Family</div>
+                                                            </div>
                                             </div>
 
-                                            <div class="dropDown-bd dropDown-bd_narrow mix-dropDown-bd_inset">
-                                                <ol class="navList">
-                                                    <li class="navList-item mix-navList-item_hover">
-                                                        <label class="label mix-label_hasCheckboxRt">
-                                                            <input class="checkbox" type="radio" name="sort[0]" value="proximity" checked /> Proximity
-                                                        </label>
-                                                    </li>
-                                                    <li class="navList-item mix-navList-item_hover">
-                                                        <label class="label mix-label_hasCheckboxRt">
-                                                            <input class="checkbox" type="radio" name="sort[0]" value="date" /> Newest
-                                                        </label>
-                                                    </li>
-                                                    <li class="navList-item mix-navList-item_hover">
-                                                        <label class="label mix-label_hasCheckboxRt">
-                                                            <input class="checkbox" type="radio" name="sort[0]" value="price" /> Price
-                                                        </label>
-                                                    </li>
-                                                    <li class="navList-item mix-navList-item_hover">
-                                                        <label class="label mix-label_hasCheckboxRt">
-                                                            <input class="checkbox" type="radio" name="sort[0]" value="beds" /> Bedrooms
-                                                        </label>
-                                                    </li>
-                                                    <li class="navList-item mix-navList-item_hover">
-                                                        <label class="label mix-label_hasCheckboxRt">
-                                                            <input class="checkbox" type="radio" name="sort[0]" value="baths" /> Bathrooms
-                                                        </label>
-                                                    </li>
-                                                    <li class="navList-item mix-navList-item_hover">
-                                                        <label class="label mix-label_hasCheckboxRt">
-                                                            <input class="checkbox" type="radio" name="sort[0]" value="sqft" /> Sqft
-                                                        </label>
-                                                    </li>
-                                                    <li class="navList-item mix-navList-item_hover">
-                                                        <label class="label mix-label_hasCheckboxRt">
-                                                            <input class="checkbox" type="radio" name="sort[0]" value="lot" /> Lot Size
-                                                        </label>
-                                                    </li>
-                                                    <li class="navList-item mix-navList-item_hover">
-                                                        <label class="label mix-label_hasCheckboxRt">
-                                                            <input class="checkbox" type="radio" name="sort[0]" value="year" /> Year Built
-                                                        </label>
-                                                    </li>
-
-                                                    <li class="navList-item" aria-hidden>
-                                                        <!-- spacer -->
-                                                    </li>
-
-                                                    <li class="navList-item mix-navList-item_hover">
-                                                        <label class="label mix-label_hasCheckboxRt">
-                                                            <input class="checkbox" type="radio" name="sort[1]" value="" /> Low to High
-                                                        </label>
-                                                    </li>
-                                                    <li class="navList-item mix-navList-item_hover">
-                                                        <label class="label mix-label_hasCheckboxRt">
-                                                            <input class="checkbox" type="radio" name="sort[1]" value="desc" checked /> High to Low
-                                                        </label>
-                                                    </li>
-                                                </ol>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="compare" data-controller="CompareController">
-
-                                        <div class="dropDown dropDown_switch" data-controller="ToggleController">
-
-                                            <div class="dropDown-trigger">
-                                                <a class="btnCtrl-item-btn btnCtrl-item-btn_light js-toggle" href="#">
-                                                    <i class="icon icon_compareSolid mix-icon_accent mix-icon_SM_lrg mix-icon_MD_md" aria-hidden="true"></i>
-                                                    Compare
-                                                    <span class="js-compare-count"></span>
-                                                </a>
-                                            </div>
-
-                                            <div class="dropDown-bd mix-dropDown-bd_inset dropDown-bd_wide">
-                                                <div class="box box_lrg">
-                                                    <div class="box-hd">
-                                                        <div class="hdg hdg_3">
-                                                            Compare
-                                                            <span class="js-compare-count"></span>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="box-bd js-compare-list"></div>
-
-                                                    <div class="box-ft mix-box_textCenter">
-                                                        <a class="txt txt_accent js-compare-viewLink" href="javascript://modal-open?id=compare">View Detailed Comparison</a>
-                                                        <p class="txt txt_accent js-compare-viewMessage">Add at least two Listings to view comparisons.</p>
-                                                    </div>
-                                                    <div class </div>
-                                                    </div>
-                                                    <!-- /dropDown-bd -->
-
-                                                </div>
-                                                <!-- /dropDown -->
-
-                                    </li>
-                                    <!-- /compare -->
-                                </ul>
-                                </div>
-                                </div>
-                                <!-- /grid -->
-                            </div>
-                            <!-- /tier -->
-
-                        </div>
-                        <!-- /util -->
-
-                        <div class="messageBanner isVisuallyHiddenMD">
-                            <div class="hList hList_piped mix-hList_ctr">
-                                <span class="txt txt_sm" data-controller="SearchSummaryController">
-
-                                    14 Results +1 Filters
-
-                                </span>
-
-                                <span class="txt txt_sm">
-                                    <div class="dropDown" data-controller="ToggleController">
-
-                                        <a class="link" href="/sell-my-house/register/login/?returnURL=/search/list/tampa-florida">
-                                            <span class="txt txt_sm">Save This Search</span>
-                                        </a>
-
-
-                                        <div class="dropDown-bd mix-dropDown-bd_inset">
-                                            <form class="form" action="" data-controller="SearchSaveController">
-
-                                                <label>
-                                                    <span class="label">
-                                                        <span class="hdg hdg_h3">Name this Search</span>
-                                                    </span>
-                                                    <input class="input" name="name" placeholder="Name" required />
-                                                </label>
-
-                                                <div class="form-actions mix-form-actions_textRight">
-                                                    <ul class="hList hList_std">
-                                                        <li>
-                                                            <a class="js-toggle-close" href="#">
-                                                                <span class="txt txt_sm">Cancel</span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <button class="btn btn-primary">Save</button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-
-                                            </form>
-                                        </div>
-                                        <!-- /dropDown-bd -->
-
-                                    </div>
-                                    <!-- /dropDown -->
-                                </span>
-                            </div>
-                            <!-- /hList -->
-                        </div>
-
-                        <div class="page page_pushTopLg">
-                            <div class="tier tier_wide">
-                                <div class="listings" data-controller="ListingListController" data-model="ScopeModel">
-
-                                    <div class="grid_MD grid_MD_gutter">
-                                        <div class="grid_MD-col_auto">
-                                            <h1 class="hdg hdg_h1c mix-hdg_block contentBox-hd">Homes For Sale in Tampa, FL</h1>
-                                            <div class="js-listings-list">
-
-
-                                                <h2 class="blockHdg blockHdg_pushBottom">Listings in Tampa, FL</h2>
-                                                <ol class="vList vList_lrgMD" data-controller="ListingListBucketController">
-                                                    <li>
-
-                                                        <div class="estate
-                        " data-controller="ListingController" data-source-key="24176179" data-id="5af20df3b0f839026f8b4567">
-
-                                                            <div class="estate-bd">
-                                                                <a href="https://www.forsalebyowner.com/listing/103-S-Habana-Ave-Tampa-FL/5af20df3b0f839026f8b4567">
-                                                                    <div class="estate-img">
-                                                                        <div class="imgBkgrd imgBkgrd_40x29 imgBkgrd_SM_32x15 myMapItems" id="myMapItems_5af20df3b0f839026f8b4567">
-                                                                            <div class="map map_fill" data-controller="MapController" data-zoom="10" data-disabled>
-
-                                                                                <div class="mapPin" data-controller="MapPinController" data-latitude="27.94423" data-longitude="-82.48943">
-
-                                                                                    <div class="isHidden js-map-label">
-                                                                                        <div class="mapLabel mapLabel_point mapLabel_point_sm"></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <!-- /mapPin -->
-                                                                            </div>
-                                                                            <!-- /map -->
-                                                                        </div>
-
-                                                                        <div class="estate-img-count">
-                                                                            <span class="flag flag_rt">
-                                                                                <i class="icon icon_image"></i>
-                                                                                0
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-
-                                                                <div class="estate-info" itemscope itemtype="http://schema.org/SingleFamilyResidence">
-                                                                    <div class="estateSummary mix-estateSummary_SM_sm">
-                                                                        <a href="https://www.forsalebyowner.com/listing/103-S-Habana-Ave-Tampa-FL/5af20df3b0f839026f8b4567">
-                                                                            <div class="estateSummary-price mix-estateSummary_SM-price_sm">$615,000</div>
-
-                                                                            <div class="highlight">
-                                                                                <em class="highlight-text isHiddenSM">Last updated 3 months ago</em>
-                                                                            </div>
-
-                                                                            <div class="estateSummary-address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                                                                <span itemprop="streetAddress">103 S Habana Ave</span>,
-                                                                                <span itemprop="addressLocality">Tampa</span>,
-                                                                                <span itemprop="addressRegion">FL</span>
-                                                                                <span itemprop="postalCode">33609</span>
-                                                                            </div>
-
-                                                                            <div class="estateSummary_SM-list estateSummary_LG-list">
-                                                                                <div class="estateSummary-list">
-                                                                                    <div>5 Beds</div>
-
-                                                                                    <div>3 Baths</div>
-                                                                                </div>
-
+ 
                                                                                 <div class="estateSummary-list">
                                                                                     <div>2,464 Sqft</div>
 
-                                                                                    <div>Single Family</div>
-                                                                                </div>
-                                                                            </div>
-
-
-
-
-                                                                        </a>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="estate-actions">
-                                                                <div class="estateActions mix-estateActions_SM_inv">
-
-                                                                    <a class="ga-listing-favorite" id="favoriteBtn5af20df3b0f839026f8b4567" href="/sell-my-house/register/login/?returnURL=/search/list/tampa-florida/proximity,desc-sort/?addfavorite=5af20df3b0f839026f8b4567">
-                                                                        <span class="hover" data-controller="HoverController">
-                                                                            <i class="icon icon_heart mix-icon_ml js-listing-favorite"></i>
-                                                                            <span class="hover-box js-hover-box">
-                                                                                <span class="tooltip tooltip_sm isActive">Save to Favorites</span>
-                                                                            </span>
-                                                                        </span>
-                                                                    </a>
-
-                                                                    <a class="ga-listing-compare" href="javascript://listing-compare-toggle?id=5af20df3b0f839026f8b4567">
-                                                                        <span class="hover" data-controller="HoverController">
-                                                                            <i class="icon icon_compare mix-icon_ml js-listing-compare"></i>
-                                                                            <span class="hover-box js-hover-box">
-                                                                                <span class="tooltip tooltip_sm isActive">Add to Compare</span>
-                                                                            </span>
-                                                                        </span>
-                                                                    </a>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                        <!-- /listing -->
-                                                    </li>
 
 
                                                     <li>
@@ -1917,28 +2084,6 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="estate-actions">
-                                                                <div class="estateActions mix-estateActions_SM_inv">
-
-                                                                    <a class="ga-listing-favorite" id="favoriteBtn58c870c5b0f839861e8b4569" href="/sell-my-house/register/login/?returnURL=/search/list/tampa-florida/proximity,desc-sort/?addfavorite=58c870c5b0f839861e8b4569">
-                                                                        <span class="hover" data-controller="HoverController">
-                                                                            <i class="icon icon_heart mix-icon_ml js-listing-favorite"></i>
-                                                                            <span class="hover-box js-hover-box">
-                                                                                <span class="tooltip tooltip_sm isActive">Save to Favorites</span>
-                                                                            </span>
-                                                                        </span>
-                                                                    </a>
-
-                                                                    <a class="ga-listing-compare" href="javascript://listing-compare-toggle?id=58c870c5b0f839861e8b4569">
-                                                                        <span class="hover" data-controller="HoverController">
-                                                                            <i class="icon icon_compare mix-icon_ml js-listing-compare"></i>
-                                                                            <span class="hover-box js-hover-box">
-                                                                                <span class="tooltip tooltip_sm isActive">Add to Compare</span>
-                                                                            </span>
-                                                                        </span>
-                                                                    </a>
-                                                                </div>
-
                                                             </div>
                                                         </div>
                                                         <!-- /listing -->
@@ -1955,189 +2100,6 @@
                                                     <ol class="pager-pages">
 
 
-                                                        <li class="isActive">
-                                                            <a>1</a>
-                                                        </li>
-
-
-                                                        <li>
-                                                            <a href="javascript://route-redirect?route=/search/list/{slug}/{filters}/&page=2">2</a>
-                                                        </li>
-
-                                                    </ol>
-
-                                                    <a class="pager-nav pager-nav_next" href="javascript://route-redirect?route=/search/list/{slug}/{filters}/&page=2">
-                                                        <i class="icon icon_arrowRight mix-icon_md"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="grid_MD-col_min">
-
-
-
-                                            <iframe id="rubiconTopAd" style="margin: 5px 0; display: none;" src="/rubicon.php?location=top&section=searchResults" frameborder="0"
-                                                scrolling="no" height="252" width="330">
-                                            </iframe>
-                                            <script>
-                                                document.getElementById('rubiconTopAd').onload = function () {
-                                                    this.style.display = 'block';
-                                                }
-                                            </script>
-
-                                            <div id="lendingTreeWidget" class="b">
-                                                <h3 class="title-rail" style="width:275px;color: #fff;background-color: #a8a8a8;padding: 12px 5px 12px 10px;font-size: 1.1em;line-height: 1em;border: none;">Mortgage Calculator</h3>
-                                                <iframe src="" scrolling="no" frameborder="0" id="widgetFrame" title="LendingTree Widget" width="275px" height="275px" class="ng-pristine ng-valid"></iframe>
-                                            </div>
-                                            <script>
-                                                function defer(method) {
-                                                    if (window.jQuery) {
-                                                        method();
-                                                    } else {
-                                                        setTimeout(function () { defer(method) }, 50);
-                                                    }
-                                                }
-
-                                                defer(function () {
-                                                    $(document).ready(function () {
-                                                        $("#lendingTreeWidget iframe").attr("src", "//widgets.lendingtree.com/LoanExplorer/TodaysLowRates?BgColorTop=FFFFFF&BgColorBottom=FAFAFA&LabelColor=818181&HighlightColor=555555&LogoVisible=true&ButtonColorTop=f8a200&ButtonColorBottom=f57c04&ButtonTextColor=FFFFFF&Title=Today%27s%20Low%20Rates&DefaultTab=New Home&DefaultHeight=275&DefaultTop=209&EsourceID=6334996&cchannel=bd&csource=30&cname=fsbo&cmethod=&ccontent=&ppckw=&adid=&mid=&cpad=&adtest=&siteid=todayslowrateswidget&cterm=90210&targetUrl=https://offers.lendingtree.com/splitter/splitter.ashx?id=bd-hybrid&loan-type=mortgage&loan-type=mortgage");
-                                                    });
-                                                });
-                                            </script>
-
-                                            <div>
-                                                <iframe src="/partner/affiliate/rail.php?type=banner&page=searchResults&city=Tampa&state=FL&featuredListingID=&showCarrington="
-                                                    frameborder="0" scrolling="no" height="252" width="330" data-controller="IFrameResizeController">
-                                                </iframe>
-                                            </div>
-                                            <div>
-                                                <iframe src="/partner/affiliate/rail.php?type=sidebar&page=searchResults&city=Tampa&state=FL&showCarrington=" frameborder="0"
-                                                    scrolling="no" height="1700" width="330" data-controller="IFrameResizeController">
-                                                </iframe>
-                                            </div>
-
-
-                                            <iframe id="rubiconBottomAd" style="margin: 5px 0; display: none;" src="/rubicon.php?location=bottom&section=searchResults"
-                                                frameborder="0" scrolling="no" height="252" width="330">
-                                            </iframe>
-                                            <script>
-                                                document.getElementById('rubiconBottomAd').onload = function () {
-                                                    this.style.display = 'block';
-                                                }
-                                            </script>
-
-                                        </div>
-                                    </div>
-                                    <!-- /grid -->
-
-                                </div>
-                                <!-- /list -->
-                                <script type="text/javascript">
-                                    function GetMap() {
-                                        $(document).ready(function () {
-                                            var myMapItem = $(".myMapItems");
-                                            var appSettings = window.blueprint.settings;
-                                            var mapKey = (typeof appSettings !== 'undefined') ? appSettings.MAP_API_KEY : '';
-
-                                            myMapItem.each(function () {
-                                                var myMapItemId = $(this).attr("id");
-                                                var map = new Microsoft.Maps.Map(document.getElementById(myMapItemId), {
-                                                    credentials: mapKey,
-                                                    showMapTypeSelector: false,
-                                                    showZoomButtons: false,
-                                                    showLocateMeButton: false,
-                                                    showTermsLink: false,
-                                                    showScalebar: false
-                                                });
-                                                var latitude = $(this).find(".mapPin").attr("data-latitude");
-                                                var longitude = $(this).find(".mapPin").attr("data-longitude");
-                                                var loc = new Microsoft.Maps.Location(latitude, longitude);
-                                                var pushpin = new Microsoft.Maps.Pushpin(loc, null);
-                                                map.entities.push(pushpin);
-                                                map.setView({ center: loc });
-                                            });
-                                        });
-                                    }
-                                </script>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="blueprint-modals">
-                        <div class="modal" data-controller="AlertModalController" data-id="alert">
-
-                            <div class="modal-box modal-box_sm mix-modal-box_scroll js-modal-box">
-                                <div class="modal-box-close">
-                                    <a class="btn btn_close js-modal-close" href="#">Close</a>
-                                </div>
-                            </div>
-                            <!-- /modal-box -->
-
-                        </div>
-                        <!-- /modal -->
-                        <div class="modal" data-controller="LoginModalController" data-id="login">
-
-                            <div class="modal-box modal-box_max mix-modal-box_contain mix-modal-box_scroll js-modal-box">
-                                <div class="modal-box-close">
-                                    <a class="btn btn_close js-modal-close" href="#">Close</a>
-                                </div>
-                            </div>
-                            <!-- /modal-box -->
-
-                        </div>
-                        <!-- /modal -->
-
-                        <div class="modal compareModelBox" data-controller="ModalController" data-id="compare">
-
-                            <div class="modal-box modal-box_max js-modal-box" data-controller="TableCompareController">
-
-                                <div class="modal-box-hd">
-                                    <div class="contentBox">
-                                        <h2 class="hdg hdg_h3SM hdg_h1MD">
-                                            <i class="icon icon_compareSolid mix-icon_accent mix-icon_lft"></i>
-                                            Compare Listings
-                                            <span class="js-compare-count"></span>
-                                        </h2>
-                                        <a class="txt txt_sm txt_accent" href="javascript://listing-compare-clear">Clear All</a>
-                                    </div>
-                                    <!-- /contentBox -->
-                                </div>
-
-                                <div class="modal-box-bd js-compare-list">
-                                </div>
-                                <!-- /modal-box-bd -->
-
-                                <div class="modal-box-ft">
-                                    <div class="contentBox mix-contentBox_textCenter">
-                                        <a class="btn btn_primary mix-btn_fullSM js-modal-close" href="#">Close
-                                            <span class="isVisuallyHiddenSM">Comparison</span>
-                                        </a>
-                                    </div>
-                                    <!-- /contentBox -->
-                                </div>
-
-                            </div>
-                            <!-- /modal-box -->
-
-                        </div>
-                        <!-- /modal -->
-                    </div>
-
-                </div>
-                <!-- /blueprint -->
-
-                <!-- JAVASCRIPT -->
-                <script src="/static/foundation/standard/scripts/unsorted/jquery-1.8.2.min.js"></script>
-                <script src="https://www.bing.com/api/maps/mapcontrol?callback=GetMap" async defer></script>
-                <!--<script src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&s=1"></script>-->
-                <script src="https://www.forsalebyowner.com/assets/scripts/main.js?v=03012018193857"></script>
-
-                <!-- Begin external footer -->
-            </div>
-            <script type="text/javascript">
-
-                if (window.location.href.indexOf("?addfavorite=") > -1) {
-                    window.listingID = window.location.href.split("?addfavorite=")[1].split("#")[0];
                 }
 
             </script>
@@ -2322,8 +2284,6 @@
                         $collapsable.next().next().find("i").addClass("fa-chevron-down").removeClass('fa-chevron-up');
                     }
                 });
-            });
-
 
         </script>
         <script type="text/javascript" src="/scripts/FavoritesBase.js"></script>
@@ -2445,9 +2405,6 @@
                 //end events
             })
         </script>
-
-
-
 
         <!-- End external footer -->
 
