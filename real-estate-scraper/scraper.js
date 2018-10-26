@@ -10,7 +10,10 @@ const scrapeDataFromFSBO = (city, state) => {
   state = state.split(" ").join("-");
   const scrapeUrl = `${urlBase}${city}-${state}`;
   console.log(scrapeUrl);
+
+  // request is a function which comes from the request module
   request(scrapeUrl, function(err, response, html) {
+
     fs.writeFileSync("./filename.html", html); 
     const $ = cheerio.load(html); 
 
@@ -56,13 +59,10 @@ const scrapeDataFromFSBO = (city, state) => {
 
     console.log(myTitle)
 
-
-
-
   });
 };
 
 // www.forsalebyowner.com/search/list/beverly-hills-california
 // https://www.craigslist.org/tampa-fl/
 // TESTING BY USING FUNCTION
-scrapeDataFromFSBO("berkeley", "california");
+scrapeDataFromFSBO("tampa", "florida");
