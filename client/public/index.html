@@ -2,185 +2,38 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Real Estate App</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/main.css">
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Real Estate App</title>
 </head>
 
 <body>
-  <!-- TOP STRIP -->
-  <div class="top-strip">
-    <div class="phone-numbers">
-      <span class="office-phone">
-        Office Phone - 123.456.7890
-      </span>
-      <span class="divider">|</span>
-      <span class="mobile-phone">
-        Mobile Phone - 321.654.0987
-      </span>
-    </div>
-  </div>
-  <!-- NAVBAR -->
-  <div class="navbar">
-    <div class="agent-image">
-      <img id="realtor-img" src="./assets/realtor.jpg" alt="realtor-picture">
-    </div>
-    <!-- <div class="main-logo-wrapper"> -->
-    <div class="main-logo">
-      <img id="main-logo-img" src="./assets/main-logo.png" alt="main-logo">
-    </div>
-    <span class="logo-text">Preferred Realtors</span>
-    <!-- </div> -->
-    <!-- HAMBURGER ICON -->
-    <i class="fas fa-bars" id="ham-icon"></i>
-    <i class="fas fa-user-circle"></i>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN2A_sszCBA2Aymw3EMZKpubpRaOoQLk0&libraries=places"></script>
+
+  <noscript> You need to enable JavaScript to run this app. </noscript>
+  <div id="root">
+
   </div>
 
-  <!-- EXPANDED MENU -->
-  <ul class="expanded-menu">
-    <li>
-      <a href="./index.html">HOME</a>
-    </li>
-    <li>
-      <a href="./property-search.html">PROPERTY SEARCH</a>
-    </li>
-    <li>
-      <a href="./market-trends.html">MARKET TRENDS</a>
-    </li>
-    <li>
-      <a href="./about-me.html">ABOUT ME</a>
-    </li>
-    <li>
-      <a href="./contact.html">CONTACT</a>
-    </li>
-  </ul>
-
-  <!-- BANNER -->
-  <div class="banner">
-    <div class="banner-contents">
-      <div class="banner-header">
-        YOUR NEW HOME IS WAITING
-      </div>
-      <div class="banner-icons">
-        <div class="icon-wrapper">
-          <i class="fas fa-3x fa-chart-bar"></i>
-        </div>
-        <div class="icon-wrapper">
-          <i class="fas fa-3x fa-home"></i>
-        </div>
-        <div class="icon-wrapper">
-          <i class="fas fa-3x fa-mobile-alt"></i>
-        </div>
-      </div>
-      <div class="home-finder-wrapper">
-        <div class="home-finder-text">
-          FIND MY HOME
-        </div>
-        <div class="home-finder-searchbox">
-          <form class="home-finder-form">
-            <input class="home-finder-input" type="text">
-            <button class="home-finder-button">
-              SEARCH
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- AGENT INFO -->
-  <div class="agent-info">
-    <div class="realtor-img-wrapper">
-      <img src="./assets/realtor.jpg" alt="">
-    </div>
-    <div class="company-description">
-      Thanks to our global network and stellar reputation, RE/MAX is the industry leader in competitive advantages for anybody
-      buying or selling their home. When you look for the highest quality real estate service, look no further than a RE/MAX
-      Associate, for everything from buying, renting, or selling your home, as seamless and effortless as it can be. Our
-      websites make finding your next home a breeze, and our Associates have the knowledge and experience to answer all of
-      your questions. RE/MAX Associates are The Real Estate Leaders® you can always depend on.
-    </div>
-    <div class="facebook-icon-wrapper">
-      <i class="fab fa-2x fa-facebook-f"></i>
-    </div>
-  </div>
-  <!-- SLOGAN -->
-  <div class="slogan ">
-    <div class="slogan-banner">
-      No one in the world sells more real estate than BaibMax
-    </div>
-  </div>
-  <!-- FEATURED PROPERTY -->
-  <div class="featured-property">
-    <div class="property-img">
-    </div>
-    <div class="property-info">
-      <div class="price">
-        $700,000
-      </div>
-      <div class="address">
-        1212 MAXINE DR
-      </div>
-      <div class="room-description">
-        Bathrooms: 4 &nbsp;|&nbsp; Bedrooms: 5
-      </div>
-    </div>
-  </div>
-  <!-- FOOTER -->
-  <footer>
-    <img src="https://content.mediastg.net/static/RealEstate/company/298/013-logo.png" alt="">
-    <div class="footer-logo-subtext">
-      PREFERRED REALTORS
-    </div>
-    <div class="office-address-info">
-      12 Park Lane Dr
-      <br> Oldtown Circle, PA. 19073
-      <br> Office Phone: (123)456-7890
-    </div>
-    <div class="realtor-info">
-      Marcus Maximus
-    </div>
-    <div class="credentials-contact">
-      Associate Broker, SRES, GRI, ALHS
-      <br> AB99991
-      <br> Mobile Phone: (098)765-4321
-    </div>
-    <div class="follow">
-      FOLLOW ME
-      <div class="follow-icon">
-        <i class="fab fa-1x fa-facebook-f"></i>
-      </div>
-    </div>
-    <div class="footer-contact">
-      <div class="form-header">
-        CONTACT
-      </div>
-      <form class="contact-form">
-        <input type="text" placeholder="Name">
-        <br>
-        <input type="text" placeholder="Email">
-        <br>
-        <textarea type="text" placeholder="Message"></textarea>
-        <br>
-        <button>SEND</button>
-      </form>
-    </div>
-    <div class="disclosure">
-      Each RE/MAX Office is Independently Owned and Operated. Equal Housing Opportunity.
-      <br> © 2018 Reliance Network and RE/MAX Pennsylvania & Delaware. All rights reserved. U.S. Reg. Copyright TX-5-910-991,
-      TX-5-910-992, TX-5-910-993, and TX-5-910-994. Equal Housing Opportunity.
-    </div>
-    <img src="http://www.adriennecordova.com/Areas/CMS/Views/cms-templates/img/reliance-logo-white.png" alt="webdeveloper-logo">
-    <br>
-    <button class="agent-access">
-      AGENT ACCESS
-    </button>
-  </footer>
-  <script src="./js/main.js "></script>
 </body>
 
 </html>
