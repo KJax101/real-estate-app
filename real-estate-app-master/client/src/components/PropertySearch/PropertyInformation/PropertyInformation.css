@@ -1,0 +1,126 @@
+.propertyInformationContainer {
+  max-width: 1400px; }
+
+.item {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  text-align: left;
+  width: 200px; }
+
+.general-information p {
+  text-align: center; }
+
+.address {
+  margin: 1em auto 0em auto; }
+
+.facts-at-a-glance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center; }
+
+.column-1, .column-2 {
+  margin: 1em .5em .75em 1em; }
+
+.media-image {
+  margin-right: .5em;
+  display: inline-block;
+  height: 2em;
+  width: 2em; }
+
+.media-image i {
+  font-size: 1.8em; }
+
+.fa-bath {
+  font-size: 1.5em; }
+
+.facts-details {
+  display: inline-block;
+  margin-left: .8em;
+  text-align: left; }
+
+.zestimate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .zestimate p {
+    margin: 0;
+    height: 100%;
+    font-size: 1.2em;
+    margin-right: 1em;
+    font-family: 'Roboto', sans-serif; }
+  .zestimate button {
+    display: inline-block;
+    background-color: #00cc7a;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 12em;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px; }
+  .zestimate button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s; }
+  .zestimate button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s; }
+  .zestimate button:hover span {
+    padding-right: 25px; }
+  .zestimate button:hover span:after {
+    opacity: 1;
+    right: 0; }
+
+#zestimate-price {
+  display: inline-block;
+  margin-left: .5em;
+  color: #00cc7a; }
+
+.ul-list {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column; }
+
+.link-list {
+  padding: 5px;
+  width: max-content; }
+
+.link-list:hover .zillow-link {
+  color: black;
+  font-weight: bold; }
+
+.link-list::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s; }
+
+.link-list:hover::after {
+  width: 100%; }
+
+.zillow-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em; }
+
+@media only screen and (min-width: 1000px) {
+  .propertyInformationContainer {
+    margin: 0 auto;
+    width: 80%; } }
